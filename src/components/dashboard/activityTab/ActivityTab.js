@@ -6,7 +6,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 import ActivityTableData from "../../../data/dashboard/activity-table-data.json";
 
-const ActivityTab = () => {
+const ActivityTab = ({name}) => {
     const [key, setKey] = useState('today');
 
     return(
@@ -14,7 +14,7 @@ const ActivityTab = () => {
             <ScrollAnimation animateIn="fadeInUp" delay={500} animateOnce={true} >
                 <div className="card border-0 shadow-sm dashboard-activity-tab">
                     <div className="card-body p-4 d-flex flex-wrap">
-                        <h5>Activity</h5>
+                        <h5>{name}</h5>
                         
                         <Tabs
                             id="dashboard-activity-tab" 

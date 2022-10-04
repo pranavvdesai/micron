@@ -90,7 +90,7 @@ const PriceHistory = (props) => {
     });
 
     return(
-        <div className="col-12 col-xl-8">
+        <div className="col-12 col-xl-12">
             <ScrollAnimation animateIn="fadeInUp" delay={500} animateOnce={true} >
                 <div className="card border-0 shadow-sm">
                     <div className="card-body p-4 pb-3">

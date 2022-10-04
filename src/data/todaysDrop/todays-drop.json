@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "title": "Pixel Cartoon",
-        "price": "0.99 ETH",
+        "title": "Perambur",
+        "price": "0.3 km",
         "image": "img/bg-img/6.jpg",
         "badgeColor": "danger",
-        "authorName": "designing_world",
+        "authorName": "5 km to dumpyard",
         "authorAvater": "img/bg-img/u4.jpg",
         "authorVerified": "true",
         "buttonText": "Place bid",
@@ -14,12 +14,12 @@
     },
     {
         "id": 2,
-        "title": "Funny Pigs #455",
-        "price": "0.78 ETH",
-        "image": "img/bg-img/7.jpg",
+        "title": "Avadi",
+        "price": "0.85 km",
+        "image": "img/bg-img/6.jpg",
         "badgeColor": "danger",
-        "authorName": "creative_world",
-        "authorAvater": "img/bg-img/u1.jpg",
+        "authorName": "7 km to dumpyard",
+        "authorAvater": "img/bg-img/u4.jpg",
         "authorVerified": "true",
         "buttonText": "Place bid",
         "buttonURL": "#",
@@ -27,15 +27,16 @@
     },
     {
         "id": 3,
-        "title": "Pig in Cars",
-        "price": "0.63 ETH",
-        "image": "img/bg-img/8.jpg",
+        "title": "Nagar",
+        "price": "0.98 km",
+        "image": "img/bg-img/6.jpg",
         "badgeColor": "danger",
-        "authorName": "nft_fun",
-        "authorAvater": "img/bg-img/u2.jpg",
+        "authorName": "7.5 km to dumpyard",
+        "authorAvater": "img/bg-img/u4.jpg",
         "authorVerified": "true",
         "buttonText": "Place bid",
         "buttonURL": "#",
         "buttonIcon": "img/core-img/fire.png"
     }
+    
 ]

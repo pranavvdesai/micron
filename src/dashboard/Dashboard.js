@@ -23,82 +23,45 @@ const Dashboard = () => {
                 <div className="container">
                     <div className="row g-4">
                     
-                        <div className="col-12 col-xxl-6">
+                        <div className="col-12 col-xxl-12">
                             <div className="row g-4">
                                 
                                 {/* Hero Card */}
                                 <HeroCard 
                                     backgroundImage="img/bg-img/44.jpg" 
-                                    heading="Explore, buy, and sell exceptional NFTs." 
-                                    subHeading="It's crafted with the latest trend of design & coded with all modern approaches."
+                                    heading="Ratings" 
+                                    subHeading="See the ratings of your nearest dumpyard"
                                     buttonGroup={[
                                         {
                                             style: "warning",
                                             path: "/explore1",
-                                            text: "Discover"
+                                            text: "View"
                                         },
-                                        {
-                                            style: "dark",
-                                            path: "/create-new",
-                                            text: "Create"
-                                        }
+                                        
                                     ]}
                                 />
 
 
-                                {/* Statistics Chart */}
-                                <StatisticsChart 
-                                    title="Sales" 
-                                    subTitle="Last 10 days"
-                                />
-
-                                {/* Statistics Chart */}
-                                <StatisticsChartTwo 
-                                    title="Revenue" 
-                                    subTitle="Last 10 days"
-                                />
+                                
 
                             </div>
                         </div>
                         
-                        {/* Monthly Visitor Chart */}
-                        <MonthlyVisitorChart 
-                            title="Monthly Visitors" 
-                        />
+                        
 
                         {/* Activity Tab */}
-                        <ActivityTab />
+                        <ActivityTab name="Dump data (amount of stuff recycled)" />
+                        <ActivityTab name="Ratings (on what basis)" />
 
-                        {/* Trending Auctions */}
-                        <TrendingAuction 
-                            title="Trending Auctions" 
-                            icon="img/core-img/fire2.png"
-                        />
-
-                        <FeaturedCard 
-                            title="Top NFTs" 
-                            buttonText="View all NFTs" 
-                            buttonPath="/explore1"
-                        />
 
                         <PriceHistory 
                             title="Price History" 
                             icon="img/core-img/ethereum.png" 
                         />
 
-                        <TodaysPick 
-                            title="Top Seller" 
-                            btnPath="/featured-items" 
-                            btnText="View all"
-                        />
+                        
 
-                        <TopAuthor 
-                            title="Top Authors"
-                        />
-
-                        <TopBuyer 
-                            title="Top Buyers" 
-                        />
+                        
                     </div>
                 </div>
             </div>

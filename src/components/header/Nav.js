@@ -17,9 +17,6 @@ export default function FuntoNavbar() {
             </NavDropdown>
             <NavDropdown className="ft-dd" title="User" id="User">
                 <NavLink to="/dashboard">Dashboard</NavLink>
-                <NavLink to="/live-bids">Live Bids</NavLink>
-                <NavLink to="/my-collection">My Collection</NavLink>
-                <NavLink to="/my-wallet">My Wallet</NavLink>
                 <NavLink to="/notifications">Notifications</NavLink>
                 <NavLink to="/settings">Settings</NavLink>
             </NavDropdown>

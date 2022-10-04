@@ -4,11 +4,18 @@ import Form from 'react-bootstrap/Form';
 
 const RegisterContent = (props) => {
     const { title, subTitle, button, image } = props;
+    const [username, setUsername] = useState("");
     const [passwordShow, setPasswordShow] = useState(false);
     
     const togglePassword = () => {
         setPasswordShow(!passwordShow);
     };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        localStorage.setItem('user', username);
+        window.location.href = "/";
+    }
+    console.log(username);
 
     return(
         <div className="register-area">
@@ -31,7 +38,10 @@ const RegisterContent = (props) => {
                                     </Form.Group>
                                     
                                     <Form.Group className="mb-4">
-                                        <Form.Control type="text" placeholder="Username" required />
+                                        <Form.Control type="text" placeholder="Username" required
+                                            value={username}
+                                            onChange={(e) => setUsername(e.target.value)}
+                                        />
                                     </Form.Group>
                                     
                                     <Form.Group className="mb-4">
@@ -50,7 +60,9 @@ const RegisterContent = (props) => {
                                         label="I agree to all terms & conditions."
                                     />
 
-                                    <button className="btn btn-primary w-100" type="submit">
+                                    <button className="btn btn-primary w-100" type="submit"
+                                        onClick={handleSubmit}
+                                    >
                                         Register Now
                                     </button>
                                 </Form>                                    
